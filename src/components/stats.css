@@ -1,0 +1,83 @@
+.contenido-estadistico {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.grafico-container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+
+.materias-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.barra-progreso-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 10px auto 20px auto;
+  text-align: center;
+}
+
+.barra-progreso-container p {
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.barra-progreso {
+  width: 100%;
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.barra-progreso-fill {
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 0.5s ease;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .contenido-estadistico {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .grafico-container {
+        width: 70%;
+        height: 400px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .grafico-container {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .materias-container {
+        width: 100%;
+    }
+}

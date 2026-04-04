@@ -1,0 +1,79 @@
+.selector-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  font-family: sans-serif;
+}
+
+.selector-container label {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.selector-container select {
+  padding: 6px 10px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.selector-container select:hover {
+  border-color: #888;
+}
+
+.selector-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  font-family: sans-serif;
+  padding: 0 15px;
+}
+
+/* Texto */
+.selector-container label {
+  font-weight: bold;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+/* Select */
+.selector-container select {
+  padding: 8px 12px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: border 0.2s, box-shadow 0.2s;
+  min-width: 180px;
+}
+
+/* Hover */
+.selector-container select:hover {
+  border-color: #888;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 600px) {
+  .selector-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .selector-container label {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .selector-container select {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+  }
+}

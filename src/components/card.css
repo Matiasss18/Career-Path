@@ -1,0 +1,103 @@
+.card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    width: 80%;
+    background-color: #d9d9d9;
+}
+
+.materias-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.materia {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #000000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+select {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.bloqueada {
+    color: #721c24;
+}
+
+.bloqueada select {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.bloqueada select:hover {
+    cursor: not-allowed;
+}
+
+.select.aprobada {
+    background-color: #4caf50;
+    color: white;
+}
+
+.select.firmada {
+    background-color: #ff9800;
+    color: white;
+}
+
+.select.cursando {
+    background-color: #2196f3;
+    color: white;
+}
+
+select option {
+    background-color: white;
+    color: black;
+}
+
+select:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+select {
+    transition: 0.2s;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .card {
+        width: 90%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .card {
+        width: 95%;
+        padding: 10px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .materias-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .materias-list {
+        grid-template-columns: 1fr;
+    }
+}

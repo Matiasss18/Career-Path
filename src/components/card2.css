@@ -1,0 +1,82 @@
+.card2 {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.materias-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.materia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card2.aprobada {
+    border-left: 5px solid #4caf50;
+}
+
+.card2.firmada {
+    border-left: 5px solid #ff9800;
+}
+
+.card2.cursando {
+    border-left: 5px solid #2196f3;
+}
+
+.card2.faltante {
+    border-left: 5px solid #721c24;
+}
+
+.card2.aprobada .materia {
+    border: 1px solid #4caf50;
+}
+
+.card2.firmada .materia { 
+    border: 1px solid #ff9800;
+}
+
+.card2.cursando .materia {
+    border: 1px solid #2196f3;
+}
+
+.card2.faltante .materia {
+    border: 1px solid #721c24;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .card2 {
+        width: 90%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .card2 {
+        width: 95%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .materias-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .materias-list {
+        grid-template-columns: 1fr;
+    }
+}
