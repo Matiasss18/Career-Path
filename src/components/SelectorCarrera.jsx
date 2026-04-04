@@ -11,7 +11,7 @@ const SelectorCarrera = ({ planKey, setPlanKey, planes }) => {
       >
         {Object.keys(planes).map(key => (
           <option key={key} value={key}>
-            {planes[key].nombre}
+            {planes[key].nombre} - {planes[key].universidad}
           </option>
         ))}
       </select>
