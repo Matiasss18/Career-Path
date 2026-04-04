@@ -1,11 +1,10 @@
-/* Mejor manejo de texto en mobile */
 body {
     overflow-x: hidden;
 }
 
-/* Tipografía responsive */
 html {
     font-size: 16px;
+    font-family: sans-serif;
 }
 
 @media (max-width: 768px) {
