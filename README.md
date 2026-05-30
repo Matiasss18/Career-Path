@@ -1,16 +1,133 @@
-# React + Vite
+# Career Path
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web que ayuda a los usuarios a explorar diferentes trayectorias profesionales y hojas de ruta de aprendizaje.
 
-Currently, two official plugins are available:
+## Vista Previa
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Demo en línea:**  
+https://career-path-indol.vercel.app/
 
-## React Compiler
+## Características
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Exploración de distintas carreras profesionales.
+- Hojas de ruta para múltiples perfiles profesionales.
+- Recursos de aprendizaje organizados.
+- Interfaz responsive.
+- Navegación clara e intuitiva.
+- Diseño centrado en la experiencia del usuario.
 
-## Expanding the ESLint configuration
+## Trayectorias Disponibles
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Desarrollo Frontend
+- Desarrollo Backend
+- Desarrollo Full Stack
+- Análisis de Datos
+- Ciencia de Datos
+- Desarrollo Mobile
+
+## Tecnologías
+
+- React
+- JavaScript
+- HTML5
+- CSS3
+- Vercel
+
+## Objetivos
+
+Este proyecto fue desarrollado para ayudar a estudiantes a realizar un seguimiento de su progreso profesional y comprender las habilidades necesarias para diferentes áreas de la industria tecnológica.
+
+Además, sirvió como ejercicio práctico en:
+
+- Desarrollo con React.
+- Organización de componentes.
+- Diseño UI/UX.
+- Desarrollo web responsive.
+- Arquitectura de la información.
+
+## Lo que Aprendí
+
+- Construcción de interfaces escalables con React.
+- Organización de contenido educativo.
+- Creación de componentes reutilizables.
+- Gestión del estado de aplicaciones.
+- Despliegue de aplicaciones web.
+
+## Mejoras Futuras
+
+- Incorporar más universidades.
+- Incorporar más trayectorias profesionales.
+
+## Autor
+
+**Matias Muraglia**
+
+GitHub:  
+https://github.com/Matiasss18
+
+# Career Path
+
+Web application that helps users explore different career paths and learning roadmaps.
+
+## Preview
+
+Live Demo:
+https://career-path-indol.vercel.app/
+
+## Features
+
+- Career exploration.
+- Roadmaps for multiple professional paths.
+- Organized learning resources.
+- Responsive interface.
+- Clean and intuitive navigation.
+- User-friendly design.
+
+## Available Career Paths
+
+- Frontend Development
+- Backend Development
+- Full Stack Development
+- Data Analysis
+- Data Science
+- Mobile Development
+
+## Technologies
+
+- React
+- JavaScript
+- HTML5
+- CSS3
+- Vercel
+
+## Objectives
+
+This project was developed to help students track the progress on their careers.
+
+It also served as a practical exercise in:
+
+- React development.
+- Component organization.
+- UI/UX design.
+- Responsive web development.
+- Information architecture.
+
+## What I Learned
+
+- Building scalable React interfaces.
+- Structuring educational content.
+- Creating reusable components.
+- Managing application state.
+- Deploying web applications.
+
+## Future Improvements
+
+- More Universities.
+- More Career Paths.
+
+## Author
+
+Matias Muraglia
+
+GitHub:
+https://github.com/Matiasss18

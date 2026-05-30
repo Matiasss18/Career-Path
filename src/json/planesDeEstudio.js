@@ -518,6 +518,532 @@ const planes = {
       },
     ]
 
+  },
+  ingCivil: {
+    "nombre": "Ingeniería Civil",
+    "area": "Civil",
+    "universidad": "Universidad Tecnológica Nacional",
+    "duracion": 6,
+    "materias": [
+      { 
+        "nombre": "Física I",
+        "nivel": 1,
+        "código": "F1"
+      },
+      { 
+        "nombre": "Álgebra y Geometría Analítica",
+        "nivel": 1,
+        "código": "AGA"
+      },
+      { 
+        "nombre": "Análisis Matemático I",
+        "nivel": 1,
+        "código": "AM1"
+      },
+      { "nombre": "Ingeniería y Sociedad",
+        "nivel": 1,
+        "código": "IngSoc"
+      },
+      { 
+        "nombre": "Química General",
+        "nivel": 1,
+        "código": "QG"
+      },
+      { 
+        "nombre": "Ingeniería Civil I",
+        "nivel": 1,
+        "código": "IC1"
+      },
+      { 
+        "nombre": "Sistemas de Representación",
+        "nivel": 1,
+        "código": "SSRR"
+      },
+      { 
+        "nombre": "Fundamentos de Informática",
+        "nivel": 1,
+        "código": "FI"
+      },
+      {
+        "nombre": "Análisis Matemático II",
+        "nivel": 2,
+        "código": "AM2",
+        "regularizadas": ["AM1", "AGA"]
+      },
+      {
+        "nombre": "Inglés I",
+        "nivel": 2,
+        "código": "IT1",
+        "regularizadas": ["IngSoc"]
+      },
+      {
+        "nombre": "Probabilidad y Estadística",
+        "nivel": 2,
+        "código": "PyE",
+        "regularizadas": ["AM1", "AGA"]
+      },
+      {
+        "nombre": "Física II",
+        "nivel": 2,
+        "código": "F2",
+        "regularizadas": ["AM1", "F1"]
+      },
+      {
+        "nombre": "Inglés II",
+        "nivel": 2,
+        "código": "IT2",
+        "regularizadas": ["IT1"],
+        "Aprobadas": ["IngSoc", "IC1"]
+      },
+      {
+        "nombre": "Ingeniería Civil II",
+        "nivel": 2,
+        "código": "IC2",
+        "regularizadas": ["IngSoc", "IC1", "SSRR", "FI"]
+      },
+      {
+        "nombre": "Tecnología de los Materiales",
+        "nivel": 2,
+        "código": "TM",
+        "regularizadas": ["SSRR", "QG", "F1", "AM1"]
+      },
+      {
+        "nombre": "Estabilidad",
+        "nivel": 2,
+        "código": "Est",
+        "regularizadas": ["AGA", "SSRR", "FI", "F1", "AM1"]
+      },
+
+      {
+        "nombre": "Instalaciones Eléctricas Acústicas",
+        "nivel": 3,
+        "código": "IEA",
+        "regularizadas": ["IC2", "TM", "F2"],
+        "aprobadas": ["AGA", "SSRR", "IC1", "QG", "AM1", "F1"]
+      },
+      {
+        "nombre": "Tecnología de la Construcción",
+        "nivel": 3,
+        "código": "TC",
+        "regularizadas": ["Est", "IC2", "TM", "IT1"],
+        "aprobadas": ["IC1", "SSRR", "AM1", "AGA", "F1", "QG", "FI"]
+      },
+      {
+        "nombre": "Tecnología del Hormigón",
+        "nivel": 3,
+        "código": "TH",
+        "regularizadas": ["TM", "PyE", "IT1"],
+        "aprobadas": ["AM1", "AGA", "QG", "F1"]
+      },
+      {
+        "nombre": "Hidráulica General y Aplicada",
+        "nivel": 3,
+        "código": "HGA",
+        "regularizadas": ["AM2", "Est", "IC2", "PyE", "F2"],
+        "aprobadas": ["AM1", "F1", "SSRR", "FI", "AGA"]
+      },
+      {
+        "nombre": "Geotopografía",
+        "nivel": 3,
+        "código": "Ggrafía",
+        "regularizadas": ["AM2", "IC2", "PyE", "F2"],
+        "aprobadas": ["IC1", "QG", "SSRR", "AM1", "AGA", "F1"]
+      },
+      {
+        "nombre": "Instalaciones Termomecánicas",
+        "nivel": 3,
+        "código": "ITme",
+        "regularizadas": ["IC2", "TM", "F2"],
+        "aprobadas": ["AGA", "SSRR", "IC1", "QG", "AM1", "F1"]
+      },
+      {
+        "nombre": "Resistencia de Materiales",
+        "nivel": 3,
+        "código": "RM",
+        "regularizadas": ["Est"],
+        "aprobadas": ["AM1", "AGA", "F1", "FI"]
+      },
+      {
+        "nombre": "Ingeniería Legal",
+        "nivel": 3,
+        "código": "IL",
+        "regularizadas": ["AM2", "IC2", "PyE", "IT1"],
+        "aprobadas": ["AGA", "IngSoc", "IC1", "FI", "AM1"]
+      },
+      {
+        "nombre": "Economía",
+        "nivel": 3,
+        "código": "ECO",
+        "regularizadas": ["IC2", "PyE", "IT1"],
+        "aprobadas": ["AM1", "AGA", "IngSoc", "IC1", "FI"]
+      },
+
+      {
+        "nombre": "Diseño Arquitectónico, Planeamiento y Urbanismo",
+        "nivel": 4,
+        "código": "DAPU",
+        "regularizadas": ["TC", "Ggrafía", "IEA", "ITme", "ECO", "IT2"],
+        "aprobadas": ["Est", "IC2", "IT1", "TM"]
+      },
+      {
+        "nombre": "Geotecnia",
+        "nivel": 4,
+        "código": "Gtecnia",
+        "regularizadas": ["RM", "TH", "TC", "Ggrafía", "HGA"],
+        "aprobadas": ["AM2", "Est", "IC2", "TM", "F2", "PyE"]
+      },
+      {
+        "nombre": "Cálculo Avanzado",
+        "nivel": 4,
+        "código": "CA",
+        "regularizadas": ["AM2", "Est", "TM", "PyE"],
+        "aprobadas": ["AM1", "AGA", "SSRR", "F1", "FI"]
+      },
+      {
+        "nombre": "Instalaciones Sanitarias y de Gas",
+        "nivel": 4,
+        "código": "ISG",
+        "regularizadas": ["TC", "Ggrafía", "HGA", "ECO"],
+        "aprobadas": ["SSRR", "QG", "F1", "FI", "TM"]
+      },
+      {
+        "nombre": "Análisis Estructural I",
+        "nivel": 4,
+        "código": "AE1",
+        "regularizadas": ["RM", "TH"],
+        "aprobadas": ["AM2", "Est", "IC2", "PyE"]
+      },
+      {
+        "nombre": "Estructuras de Hormigón",
+        "nivel": 4,
+        "código": "EH",
+        "regularizadas": ["RM", "TH", "TC", "Ggrafía", "IT2"],
+        "aprobadas": ["AM2", "Est", "IC2", "TM", "F2", "PyE"]
+      },
+      {
+        "nombre": "Hidrología y Obras Hidráulicas",
+        "nivel": 4,
+        "código": "HOH",
+        "regularizadas": ["RM", "TC", "Ggrafía", "HGA", "ECO", "IT2"],
+        "aprobadas": ["AM2", "Est", "IC2", "TM", "F2", "PyE"]
+      },
+      {
+        "nombre": "Vías de Comunicación I",
+        "nivel": 4,
+        "código": "VC1",
+        "regularizadas": ["TH", "TC", "Ggrafía"],
+        "aprobadas": ["AM2", "Est", "IC2", "TM", "PyE", "IT1"]
+      },
+
+      {
+        "nombre": "Organización y Conducción de Obras",
+        "nivel": 5,
+        "código": "OCO",
+        "regularizadas": ["Gtecnia", "ISG", "DAPU", "EH", "HOH"],
+        "aprobadas": ["TH", "TC", "Ggrafía", "HGA", "IEA", "ITme", "ECO", "IT2"]
+      },
+      {
+        "nombre": "Construcciones Metálicas y de Madera",
+        "nivel": 5,
+        "código": "CMM",
+        "regularizadas": ["CA", "AE1"],
+        "aprobadas": ["RM", "TH", "TC", "Ggrafía"]
+      },
+      {
+        "nombre": "Ingeniería Sanitaria",
+        "nivel": 5,
+        "código": "IS",
+        "regularizadas": ["Gtecnia", "ISG", "HOH"],
+        "aprobadas": ["TH", "TC", "Ggrafía", "HGA", "IT2"]
+      },
+      {
+        "nombre": "Cimentaciones",
+        "nivel": 5,
+        "código": "Cim",
+        "regularizadas": ["CA", "Gtecnia", "AE1", "EH", "HOH"],
+        "aprobadas": ["RM", "TH", "TC", "Ggrafía", "HGA"]
+      },
+      {
+        "nombre": "Análisis Estructural II",
+        "nivel": 5,
+        "código": "AE2",
+        "regularizadas": ["CA", "Gtecnia", "AE1", "EH", "HOH"],
+        "aprobadas": ["RM", "TH", "TC", "Ggrafía", "IT2"]
+      },
+      {
+        "nombre": "Gestión Ambiental y Desarrollo Sustentable",
+        "nivel": 5,
+        "código": "GADS",
+        "regularizadas": ["Gtecnia", "DAPU", "HOH", "IL"],
+        "aprobadas": ["HGA", "ECO", "IT2"]
+      },
+      {
+        "nombre": "Vías de Comunicación II",
+        "nivel": 5,
+        "código": "VC2",
+        "regularizadas": ["Gtecnia", "EH", "HOH", "IL", "VC1"],
+        "aprobadas": ["RM", "TH", "TC", "Ggrafía", "HGA", "ECO"]
+      },
+
+      {
+        "nombre": "Proyecto Final",
+        "nivel": 6,
+        "código": "PF",
+        "regularizadas": ["Gtecnia", "ISG", "DAPU", "AE1", "EH", "HOH", "IL"],
+        "aprobadas": ["IT1", "RM", "TH", "TC", "Ggrafía", "HGA", "IEA", "ITme", "ECO", "IT2"]
+      },
+      {
+        "nombre": "Práctica Profesional Supervisada",
+        "nivel": 6,
+        "código": "PPS",
+        "regularizadas": ["Gtecnia", "ISG", "DAPU", "AE1", "EH", "HOH", "IL"],
+        "aprobadas": ["IT1", "RM", "TH", "TC", "Ggrafía", "HGA", "IEA", "ITme", "ECO", "IT2"]
+      }
+    ]
+  },
+  ingElectrica: {
+    "nombre": "Ingeniería en Energía Eléctrica",
+    "area": "Eléctrica",
+    "universidad": "Universidad Tecnológica Nacional",
+    "duracion": 5,
+    "materias": [
+      { "nombre": "Integración Eléctrica I", "nivel": 1, "código": "Int1" },
+      { "nombre": "Física I", "nivel": 1, "código": "F1" },
+      { "nombre": "Álgebra y Geometría Analítica", "nivel": 1, "código": "AGA" },
+      { "nombre": "Análisis Matemático I", "nivel": 1, "código": "AM1" },
+      { "nombre": "Ingeniería y Sociedad", "nivel": 1, "código": "IngSoc" },
+      { "nombre": "Sistemas de Representación", "nivel": 1, "código": "SSRR" },
+      { "nombre": "Química General", "nivel": 1, "código": "QG" },
+      { "nombre": "Fundamentos de Informática", "nivel": 1, "código": "FI" },
+      {
+        "nombre": "Análisis Matemático II",
+        "nivel": 2,
+        "código": "AM2",
+        "regularizadas": ["AM1", "AGA"]
+      },
+      {
+        "nombre": "Probabilidad y Estadística",
+        "nivel": 2,
+        "código": "PyE",
+        "regularizadas": ["AM1", "AGA"]
+      },
+      {
+        "nombre": "Integración Eléctrica II",
+        "nivel": 2,
+        "código": "Int2",
+        "aprobadas": ["AM1", "F1", "Int1"]
+      },
+      {
+        "nombre": "Estabilidad",
+        "nivel": 2,
+        "código": "Est",
+        "regularizadas": ["AM1", "AGA", "F1"]
+      },
+      {
+        "nombre": "Mecánica Técnica",
+        "nivel": 2,
+        "código": "MT",
+        "regularizadas": ["AM1", "F1"]
+      },
+      {
+        "nombre": "Física II",
+        "nivel": 2,
+        "código": "F2",
+        "regularizadas": ["AM1", "F1"]
+      },
+      {
+        "nombre": "Cálculo Numérico",
+        "nivel": 2,
+        "código": "CN",
+        "regularizadas": ["AM1", "AGA", "F1", "FI"]
+      },
+      {
+        "nombre": "Electrotecnia I",
+        "nivel": 2,
+        "código": "Etecnia1",
+        "regularizadas": ["AGA", "F1", "AM1"]
+      },
+      {
+        "nombre": "Inglés I",
+        "nivel": 2,
+        "código": "IT1"
+      },
+
+      {
+        "nombre": "Máquinas Eléctricas I",
+        "nivel": 3,
+        "código": "ME1",
+        "regularizadas": ["F2", "Etecnia1", "AM2", "CN"],
+        "aprobadas": ["AM1", "F1"]
+      },
+      {
+        "nombre": "Física III",
+        "nivel": 3,
+        "código": "F3",
+        "regularizadas": ["F2", "AM2"],
+        "aprobadas": ["AGA", "F1", "AM1"]
+      },
+      {
+        "nombre": "Termodinámica",
+        "nivel": 3,
+        "código": "Termo",
+        "regularizadas": ["AM2", "F2"],
+        "aprobadas": ["AM1", "F1", "AGA"]
+      },
+      {
+        "nombre": "Tecnología y Ensayos de Materiales Eléctricos",
+        "nivel": 3,
+        "código": "TEME",
+        "regularizadas": ["QG", "F2"],
+        "aprobadas": ["AM1", "F1"]
+      },
+      {
+        "nombre": "Instrumentos y Mediciones Eléctricas",
+        "nivel": 3,
+        "código": "IME",
+        "regularizadas": ["PyE", "Etecnia1"],
+        "aprobadas": ["AM1", "AGA", "F1"]
+      },
+      {
+        "nombre": "Teoría de los Campos",
+        "nivel": 3,
+        "código": "TC",
+        "regularizadas": ["F2", "AM2"],
+        "aprobadas": ["AM1", "AGA", "F1"]
+      },
+      {
+        "nombre": "Taller Interdisciplinario",
+        "nivel": 3,
+        "código": "TI",
+        "regularizadas": ["F2", "Etecnia1", "AM2", "CN"],
+        "aprobadas": ["AM1", "F1"]
+      },
+      {
+        "nombre": "Electrotecnia II",
+        "nivel": 3,
+        "código": "Etecnia2",
+        "regularizadas": ["F2", "Etecnia1", "AM2"],
+        "aprobadas": ["AM1", "AGA", "F1"]
+      },
+      {
+        "nombre": "Fundamentos para Análisis de Señales",
+        "nivel": 3,
+        "código": "FAS",
+        "regularizadas": ["AM2", "CN"],
+        "aprobadas": ["AGA", "AM1"]
+      },
+      {
+        "nombre": "Inglés II",
+        "nivel": 3,
+        "código": "IT2",
+        "regularizadas": ["IT1"]
+      },
+      {
+        "nombre": "Economía",
+        "nivel": 3,
+        "código": "ECO",
+        "aprobadas": ["IngSoc"]
+      },
+
+      {
+        "nombre": "Instalaciones Eléctricas y Luminotecnia",
+        "nivel": 4,
+        "código": "IEL",
+        "regularizadas": ["TEME", "ME1", "Etecnia2"],
+        "aprobadas": ["QG", "F2", "Etecnia1", "Int2", "AM2", "IT1"]
+      },
+      {
+        "nombre": "Electrónica I",
+        "nivel": 4,
+        "código": "E1",
+        "regularizadas": ["Etecnia1"],
+        "aprobadas": ["AM1", "F1"]
+      },
+      {
+        "nombre": "Control Automático",
+        "nivel": 4,
+        "código": "CA",
+        "regularizadas": ["Etecnia2", "FAS"],
+        "aprobadas": ["AM2", "Etecnia1"]
+      },
+      {
+        "nombre": "Seguridad, Riesgo Eléctrico y Medio Ambiente",
+        "nivel": 4,
+        "código": "SREMA",
+        "regularizadas": ["QG", "Etecnia1", "TEME", "TC"],
+        "aprobadas": ["AM1", "AGA", "F1", "F2", "AM2"]
+      },
+      {
+        "nombre": "Máquinas Eléctricas II",
+        "nivel": 4,
+        "código": "ME2",
+        "regularizadas": ["TEME", "IME", "TC", "ME1", "Etecnia2"],
+        "aprobadas": ["QG", "F2", "PyE", "Etecnia1", "IT2", "AM2"]
+      },
+      {
+        "nombre": "Máquinas Térmicas, Hidráulicas y de Fluidos",
+        "nivel": 4,
+        "código": "MTHF",
+        "regularizadas": ["Est", "MT", "Termo"],
+        "aprobadas": ["F2", "AM2"]
+      },
+      {
+        "nombre": "Legislación",
+        "nivel": 4,
+        "código": "Leg",
+        "regularizadas": ["IngSoc"]
+      },
+
+      {
+        "nombre": "Sistemas de Potencia",
+        "nivel": 5,
+        "código": "SP",
+        "regularizadas": ["ME2", "CA"],
+        "aprobadas": ["TEME", "ME1", "Etecnia2", "TI"]
+      },
+      {
+        "nombre": "Accionamiento y Controles Eléctricos",
+        "nivel": 5,
+        "código": "ACE",
+        "regularizadas": ["E1", "CA", "ME2"],
+        "aprobadas": ["Etecnia1", "TEME", "Etecnia2", "FAS", "TI"]
+      },
+      {
+        "nombre": "Generación, Transmisión y Distribución de la Energía Eléctrica",
+        "nivel": 5,
+        "código": "GTDEE",
+        "regularizadas": ["F3", "ME2", "MTHF"],
+        "aprobadas": ["Est", "MT", "ME1", "TEME", "Etecnia2", "Termo"]
+      },
+      {
+        "nombre": "Electrónica II",
+        "nivel": 5,
+        "código": "E2",
+        "regularizadas": ["Etecnia2", "E1"],
+        "aprobadas": ["Etecnia1", "TI"]
+      },
+      {
+        "nombre": "Organización y Administración de las Empresas",
+        "nivel": 5,
+        "código": "OAE",
+        "regularizadas": ["Leg", "ECO"],
+        "aprobadas": ["TI"]
+      },
+      {
+        "nombre": "Proyecto Final",
+        "nivel": 5,
+        "código": "PF",
+        "regularizadas": ["ECO", "ME2", "IEL", "CA"],
+        "aprobadas": ["TEME", "IME", "ME1", "Etecnia2", "FAS", "TI", "IT2"]
+      },
+      {
+        "nombre": "Práctica Profesional Supervisada",
+        "nivel": 5,
+        "código": "PPS",
+        "regularizadas": ["ECO", "ME2", "IEL", "CA"],
+        "aprobadas": ["TEME", "IME", "ME1", "Etecnia2", "FAS", "TI", "IT2"]
+      }
+    ]
   }
 };
 
