@@ -32,6 +32,7 @@ https://career-path-indol.vercel.app/
 - HTML5
 - CSS3
 - Vercel
+- ChartJs
 
 ## Objetivos
 
@@ -52,6 +53,7 @@ Además, sirvió como ejercicio práctico en:
 - Creación de componentes reutilizables.
 - Gestión del estado de aplicaciones.
 - Despliegue de aplicaciones web.
+- Utilizacion de librerías.
 
 ## Mejoras Futuras
 
@@ -99,6 +101,7 @@ https://career-path-indol.vercel.app/
 - HTML5
 - CSS3
 - Vercel
+- ChartJs
 
 ## Objectives
 
@@ -111,6 +114,7 @@ It also served as a practical exercise in:
 - UI/UX design.
 - Responsive web development.
 - Information architecture.
+- Usage of libraries.
 
 ## What I Learned
 
